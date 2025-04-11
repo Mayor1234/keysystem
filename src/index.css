@@ -10,7 +10,3 @@
   --color-pry: #fff;
   --font-popppins: 'Poppins', sans-serif;
 }
-
-html {
-  scroll-behavior: smooth;
-}

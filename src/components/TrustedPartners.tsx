@@ -48,11 +48,11 @@ const TrustedPartners = () => {
       onMouseLeave={handleMouseLeave}
     >
       <motion.div className="flex gap-9 items-center w-max" animate={controls}>
-        {trustedPartnerslogos.map((logo, idx) => (
+        {trustedPartnerslogos.map((logo, i) => (
           <img
-            key={idx}
+            key={i}
             src={logo}
-            alt={`Trusted logo ${idx}`}
+            alt="Trusted logo"
             className="h-20 w-auto filter hover:grayscale-0 transition-all duration-300 ease-in"
           />
         ))}

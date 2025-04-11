@@ -13,7 +13,7 @@ import Footer from '../components/footer/Footer';
 
 const HomePage = () => {
   return (
-    <main>
+    <main className="bd-[#05071E]">
       <Header />
       <HeroBanner />
       <TrustedPartners />

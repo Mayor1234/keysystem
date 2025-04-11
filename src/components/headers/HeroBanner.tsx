@@ -16,23 +16,30 @@ const HeroBanner = () => {
 
       {/* Hero Content */}
       <div className="max-w-[1052px] mb-5 md:mb-10 px-2">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight tracking-wide font-popppins">
-          IT Consulting for <br className="hidden sm:block" /> Forward-thinking{' '}
-          <br className="hidden sm:block" />
-          Businesses
-        </h1>
+        <AnimateSections delay={0.5} type="popUp">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight tracking-wide font-popppins">
+            IT Consulting for <br className="hidden sm:block" />{' '}
+            Forward-thinking <br className="hidden sm:block" />
+            Businesses
+          </h1>
+        </AnimateSections>
+
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-6 font-popppins font-normal">
-          Driving Digital Transformation, One Solution at a Time
+          <AnimateSections delay={0.7} type="popUp">
+            Driving Digital Transformation, One Solution at a Time
+          </AnimateSections>
         </p>
       </div>
 
       {/* CTA Buttons */}
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 md:gap-[46px] mb-8 md:mb-16 z-30">
-        <Button>Get Started</Button>
-        <button className="border-2 border-[#4169E1] outline-none bg-[#000080] font-popppins font-bold text-lg sm:text-xl px-6 py-3 sm:px-10 sm:py-[18px] md:text-[24px] rounded-full hover:bg-white hover:text-black transition-all duration-300 ease-in-out cursor-pointer">
-          Learn More
-        </button>
-      </div>
+      <AnimateSections delay={0.9} type="popUp">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-8 md:gap-[46px] mb-8 md:mb-16 z-30">
+          <Button>Get Started</Button>
+          <button className="border-2 border-[#4169E1] outline-none bg-[#000080] font-popppins font-bold text-lg sm:text-xl px-6 py-3 sm:px-10 sm:py-[18px] md:text-[24px] rounded-full hover:bg-white hover:text-black transition-all duration-300 ease-in-out cursor-pointer">
+            Learn More
+          </button>
+        </div>
+      </AnimateSections>
 
       {/* Stroke Section with Image */}
       <section className="w-full h-auto py-5 lg:py-10 flex items-center justify-center my-10 px-4 bg-[url('/images/stroke1.png')] bg-cover bg-no-repeat">
