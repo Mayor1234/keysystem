@@ -1,4 +1,5 @@
 import { trustedPartnerslogos } from './constants';
+import AnimateSections from './shared/AnimateSections';
 
 const TheyTrustUs = () => {
   return (
@@ -15,12 +16,14 @@ const TheyTrustUs = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 md:gap-10 place-items-center">
           {trustedPartnerslogos.map((logo, index) => (
-            <div key={index} className="flex items-center justify-center">
-              <img
-                src={logo}
-                alt={`Logo ${index + 1}`}
-                className="w-50 md:w-[250.85px] md:h-[99.92px] object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
-              />
+            <div key={index}>
+              <AnimateSections delay={0.8} type="popUp">
+                <img
+                  src={logo}
+                  alt={`Logo ${index + 1}`}
+                  className="w-50 md:w-[250.85px] md:h-[99.92px] object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
+                />
+              </AnimateSections>
             </div>
           ))}
         </div>

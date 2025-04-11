@@ -1,4 +1,5 @@
 import { ourPartnerlogos } from './constants';
+import AnimateSections from './shared/AnimateSections';
 
 const OurPartners = () => {
   return (
@@ -15,12 +16,14 @@ const OurPartners = () => {
         <div className="w-full h-full md:h-[161.55px] py-8 md:py-0 bg-[#05071E] border-red-500">
           <div className="flex flex-wrap gap-9 items-center justify-center w-full h-full">
             {ourPartnerlogos.map((logo, i) => (
-              <img
-                key={i}
-                src={logo}
-                alt="Partner logo"
-                className="h-12 sm:h-16 md:h-20 max-w-[150px] object-contain filter grayscale hover:grayscale-0 transition duration-300"
-              />
+              <AnimateSections delay={0.8} type="popUp">
+                <img
+                  key={i}
+                  src={logo}
+                  alt="Partner logo"
+                  className="h-12 sm:h-16 md:h-20 max-w-[150px] object-contain filter grayscale hover:grayscale-0 transition duration-300"
+                />
+              </AnimateSections>
             ))}
           </div>
         </div>
