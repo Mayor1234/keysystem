@@ -1,31 +1,25 @@
-const logos: string[] = [
-  '/images/our-partners/software-group.png',
-  '/images/our-partners/cognizant.png',
-  '/images/our-partners/temenos.png',
-  '/images/our-partners/netinfo.png',
-  '/images/our-partners/techmahindra.png',
-];
+import { ourPartnerlogos } from './constants';
 
 const OurPartners = () => {
   return (
     <section className="bg-[#030517] text-[#ffffff]">
-      <div className="flex flex-col items-center justify-center pt-20">
+      <div className="w-full flex flex-col items-center justify-center pt-10 md:pt-20">
         <div className="mb-10">
-          <h2 className="text-[44.95px] font-bold font-popppins text-center mb-5 max-w-[816px]">
+          <h2 className="text-[30px] sm:text-[38px] md:text-[44.95px] font-bold font-popppins text-center mb-5 max-w-[816px]">
             Our Partners
           </h2>
-          <p className="text-[24px] font-popppins font-normal max-w-[728px] text-center mb-10">
+          <p className="text-base sm:text-[18px] md:text-[24px] font-popppins font-normal max-w-[728px] text-center mb-10">
             Creating a Synergy with global brands
           </p>
         </div>
-        <div className="w-full h-[161.55px] bg-[#05071E] border-red-500">
+        <div className="w-full h-full md:h-[161.55px] py-8 md:py-0 bg-[#05071E] border-red-500">
           <div className="flex flex-wrap gap-9 items-center justify-center w-full h-full">
-            {logos.map((logo, idx) => (
+            {ourPartnerlogos.map((logo, i) => (
               <img
-                key={idx}
+                key={i}
                 src={logo}
-                alt={`Partner logo ${idx}`}
-                className="h-[91.55px] w-auto filter grayscale transition-all duration-300 ease-in hover:grayscale-0"
+                alt="Partner logo"
+                className="h-12 sm:h-16 md:h-20 max-w-[150px] object-contain filter grayscale hover:grayscale-0 transition duration-300"
               />
             ))}
           </div>

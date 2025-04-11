@@ -2,7 +2,7 @@ import VisionMissionCard from './shared/VisionMissionCard';
 
 const VisionMission = () => {
   return (
-    <div className="flex justify-between container gap-8">
+    <div className="flex container flex-wrap gap-6 justify-center">
       <VisionMissionCard
         title="Our Vision"
         description="To be the trusted partner for businesses seeking to leverage technology to improve decision-making, unlock new opportunities, and achieve transformative growth"

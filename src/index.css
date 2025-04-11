@@ -7,34 +7,10 @@
 }
 
 @theme {
-  --color-pry: #832eff;
+  --color-pry: #fff;
   --font-popppins: 'Poppins', sans-serif;
+}
 
-  /* --animate-rotate-border: border-rotate 3s linear infinite;
-  --animate-border-glow: border-glow 3s ease-in-out infinite;
-
-  @keyframes border-rotate {
-    to {
-      --border-angle: 360deg;
-    }
-  } */
-
-  /* @keyframes: {
-    border-glow: {
-      '0%, 100%': { boxShadow: '0 0 0px #00c2ff33' },
-      '50%': { boxShadow: '0 0 15px #00c2ff88' },
-    },
-  },
-  animation: {
-    'border-glow': 'border-glow 3s ease-in-out infinite',
-  }, */
-  @keyframes border-spin {
-    to {
-      --border-angle: 360deg;
-    }
-  }
-
-  --animate-border-spin {
-    animation: border-spin 3s linear infinite;
-  }
+html {
+  scroll-behavior: smooth;
 }

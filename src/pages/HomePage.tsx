@@ -13,7 +13,7 @@ import Footer from '../components/footer/Footer';
 
 const HomePage = () => {
   return (
-    <>
+    <main>
       <Header />
       <HeroBanner />
       <TrustedPartners />
@@ -26,7 +26,7 @@ const HomePage = () => {
       <OurPartners />
       <GetStarted />
       <Footer />
-    </>
+    </main>
   );
 };
 
