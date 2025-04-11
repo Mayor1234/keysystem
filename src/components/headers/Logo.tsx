@@ -5,7 +5,7 @@ const Logo = () => {
         <img
           src="/images/keysystem-logo.png"
           alt="KeySystem Logo"
-          className="w-20 h-20 md:w-46 md:h-[50.4px] aspect-square object-contain object-center"
+          className="w-24 h-24 md:w-46 md:h-[50.4px] aspect-square object-contain object-center"
         />
       </a>
     </div>
