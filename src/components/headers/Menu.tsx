@@ -3,7 +3,7 @@ import { menuItems } from '../constants';
 
 const Menu = () => {
   return (
-    <nav className="hidden font-popppins font-normal leading-[26.97px] text-[22px] text-[#CFCFCF] md:w-[60%] md:flex items-center justify-center gap-[55px]">
+    <nav className="hidden font-popppins font-normal leading-[26.97px] text-[22px] text-[#CFCFCF] md:w-[60%] lg:flex items-center justify-center gap-[55px]">
       {menuItems.map((menu, i) => (
         <li
           key={i}

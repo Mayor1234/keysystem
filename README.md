@@ -71,7 +71,7 @@ The objective of redesigning a landing page is more than just "making it look be
 - Improve Performance
   - Optimize for speed and SEO
 
-### ** Steps To Implement KeySystem Tecnonology Lnanding Page**
+### ** Steps To Implement KeySystem Tecnonology Landing Page**
 
 - Design Structure
   - Decide on your layout sections:
@@ -98,7 +98,7 @@ The objective of the header section is to create a responsive navigation menu th
 
 #### **Build the UI with TailwindCSS**
 
-- Create Header component file in the src folder
+- Create `Header.tsx` component file in the src folder
 - Arrange the menu and logo using `flex` for horizontal layout.
 - Import react-icon where necessary
 - Style active and hover menu item using smooth animation with `border bottom`.
@@ -109,17 +109,13 @@ The objective of the header section is to create a responsive navigation menu th
 
 ### ** Objective**
 
-The Hero section objective is to create a background and two buttons with a `linear gradient` effects and place the mesh grid in between the background and the text using CSS properties such as `z-index`.
-
-- What your product does
-- Who it’s for
-- Why it matters
+The Hero section objective is to create a background and two buttons effects with a `linear gradient` and place the mesh grid in between the background and the text using CSS properties such as `z-index`.
 
 ### ** Steps to Implement Hero Section**
 
 #### **Build the UI with TailwindCSS**
 
-- Create the Hero component in the src folder
+- Create the `HeroBanner.tsx` component in the src folder
 - Add background effects using TailwindCss gradient property
 - Add buttons and animate the buttons using linear gradient property
 - make it responsive by reducing the text-sizes and font weight on smaller devices
@@ -135,7 +131,7 @@ The objective of the Partner Logos section is to render list of parner logos hor
 
 #### **Build the UI with TailwindCSS**
 
-- Create the TrustedBy component file in the src folder
+- Create the `TrustedPartners.tsx` component file in the src folder
 - Add background effects using TailwindCss gradient property
 - Import all the company logos in a constant file
 - map all the file and render them in card component
@@ -155,9 +151,9 @@ The objective is to add the visual image and position the mesh grid in between t
 
 #### **Build the UI with TailwindCSS**
 
-- Create the Trusted Consultant component file in the src folder
+- Create the `WhyTrusted.tsx` component file in the src folder
 - Add background effects using TailwindCss gradient property
-- Import all the visual image in the consultant comonent by adding it in an `img` tag
+- Import all the visual image in the component by wrapping it in an `img` tag
 - Add `background image properties` and `z-index` to postion the mesh grid in between the background and the text/image
 - Use framer motion to add smooth effect when the component is in view
 - make it responsive by reducing the text-sizes and font weight on smaller devices
@@ -172,7 +168,7 @@ The What We Represent Section objective is to create a gradient background effec
 
 #### **Build the UI with TailwindCSS**
 
-- Create the WhatWeRepresent component file in the src folder
+- Create the `WhatWeRepresent.tsx` component file in the src folder
 - Add background effects using TailwindCss gradient property
 - Import all the visual image in the WhatWeRepresent component by adding it in `img` tags
 - Create a parent card with a back of neon and place the child card ontop of it.
@@ -181,7 +177,27 @@ The What We Represent Section objective is to create a gradient background effec
 - Use framer motion to add smooth effect when the component is in view
 - Make it responsive by reducing the text-sizes and font weight on smaller devices
 
-### **7. Approach For Our Offering Section**
+### **7. Approach For Compliance And Certifications Section**
+
+### ** Objective**
+
+The Compliance And Certifications objective is to create a gradient background effect and render 9 buttons with different background colors and borders. With a particular border color, fades bottom of the bottons.
+
+### ** Steps to Compliance And Certifications Section**
+
+#### **Build the UI with TailwindCSS**
+
+- Create the `Compliance.tsx` component file in the src folder
+- Add background effects using TailwindCss gradient properties
+- Create a button and add gradient background color
+- Use linear gradient properties to fade the middle of the button
+- Use framer motion to add smooth effect when the component is hover
+- Import all the company logos in a constant file
+- map all the images and render them in card component
+- Use framer motion to add smooth effect when the component is in view
+- Make it responsive by reducing the text-sizes and font weight on smaller devices
+
+### **8. Approach For Our Offering Section**
 
 ### ** Objective**
 
@@ -191,10 +207,77 @@ The Our Offering objective is to create a gradient background effect and render 
 
 #### **Build the UI with TailwindCSS**
 
-- Create the Our OurOffering component file in the src folder
+- Create the `OurOffering.tsx` component file in the src folder
 - Add background effects using TailwindCss gradient property
 - Create buttons and different background color
 - Use border top 2px, border left and right 1px and border bottom 1px
 - Use linear gradient properties to fade the bottom of the buttons
 - Use framer motion to add smooth effect when the component is in view
+- Make it responsive by reducing the text-sizes and font weight on smaller devices
+
+### **9. Approach For They Trust Us section**
+
+### ** Objective**
+
+They Trust Us section objective is to create a dark background effect and render 11 logo images of the companies that trust us.
+
+### ** Steps to They Trust Us Section**
+
+#### **Build the UI with TailwindCSS**
+
+- Create the `TheyTrustUs.tsx` component file in the src folder
+- Add background effects using TailwindCss
+- Import all the company logos to a constant file from the public folder
+- map all the images and render them in card component and centralize them properly
+- Use framer motion to add smooth effect when the component is in view
+- Make it responsive by reducing the text-sizes and font weight on smaller devices
+
+### **10. Approach For Our Process Section**
+
+### ** Objective**
+
+The Our Process Section objective is to create a gradient background effect and render three cards (Strategic Consultation, Collaboration and Delivery) with a background image positioned to the right end of the card. Animate with a glowing shadow effect that radiates outward smoothly when hover on the cards.
+
+### ** Steps to Our Process Section**
+
+#### **Build the UI with TailwindCSS**
+
+- Create the `OurProcess.tsx` component file in the src folder
+- Add gradient background effects using TailwindCss gradient properties
+- Import all the images from the public folder
+- Position the background images and use `z-index` to position them behind the text
+- Use framer motion to add smooth effect when the component is in view
+- Make it responsive by reducing the text-sizes and font weight on smaller devices
+
+### **11. Approach For Get Started Section**
+
+### ** Objective**
+
+The Get Started Section objective is to create a gradient background effect and render a card with a background image positioned to the right end of the card. Add a button wih a gradient background color and a `1px border` that distintly seperate the card from the parent gradeint background.
+
+### ** Steps to Get Started Section**
+
+#### **Build the UI with TailwindCSS**
+
+- Create the `GetStarted.tsx` component file in the src folder
+- Add gradient background effects using TailwindCss gradient properties
+- Import the image from the public folder
+- Position the background image and use `z-index` to position it behind the text
+- Use framer motion to add smooth effect when the component is in view
+- Make it responsive by reducing the text-sizes and font weight on smaller devices
+
+### **12. Approach For Footer Section**
+
+### ** Objective**
+
+The Footer Section objective is to create a gradient background effect and render a card with a background image positioned to the right end of the card. Add a button wih a gradient background color and a `1px border` that distintly seperate the card from the parent gradeint background.
+
+### ** Steps to Footer Section**
+
+#### **Build the UI with TailwindCSS**
+
+- Create the `Footer.tsx` component file in the src folder
+- Add gradient background effects using TailwindCss gradient properties
+- Import the KeySystem loge image from the public folder
+- Import all the social media icons from react-icons and position them using `flex`
 - Make it responsive by reducing the text-sizes and font weight on smaller devices

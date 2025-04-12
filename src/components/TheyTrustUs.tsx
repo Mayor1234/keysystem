@@ -14,7 +14,7 @@ const TheyTrustUs = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 md:gap-10 place-items-center">
+        <div className="grid place-items-center grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
           {trustedPartnerslogos.map((logo, index) => (
             <div key={index}>
               <AnimateSections delay={0.8} type="popUp">

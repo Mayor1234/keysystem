@@ -23,7 +23,7 @@ const Footer = () => {
             <h3 className="text-[24px] lg:text-[30px] font-semibold lg:font-bold font-popppins leading-[33.6px] text-[#BBBBBB] mb-3">
               SERVICES
             </h3>
-            <div className="w-full grid grid-cols-1 text-base md:grid-cols-2 gap-2 text-[#CFCFCF] md:text-[20px] font-popppins font-normal leading-[33.6px]">
+            <div className="w-full grid grid-cols-1 text-base lg:grid-cols-2 gap-2 text-[#CFCFCF] md:text-[20px] font-popppins font-normal leading-[33.6px]">
               <ul className="space-y-1 w-fit">
                 <li>Core refresh</li>
                 <li>Application management services</li>

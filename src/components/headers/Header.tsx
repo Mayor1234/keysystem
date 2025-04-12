@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="h-20 sticky top-0 left-0 right-0 z-50 bg-linear-to-r from-[#05071E] via-[#000080] to-[#111A89] bg-[length:145%_400%] shadow-md">
-      <div className="container mx-auto flex items-center justify-between gap-10 px-5 py-8 h-full w-full md:px-0">
+      <div className="container mx-auto flex items-center justify-between gap-10 px-5 py-8 h-full w-full lg:px-0">
         <Logo />
         <Menu />
         <div className="w-fit flex items-center justify-center md:justify-end">
