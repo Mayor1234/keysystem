@@ -27,7 +27,11 @@ const Compliance = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-10">
             {logos.map((logo, index) => (
               <div key={index}>
-                <AnimateSections delay={0.5} type="popUp">
+                <AnimateSections
+                  delay={0.5}
+                  type="popUp"
+                  className="flex justify-center items-center"
+                >
                   <img
                     src={logo}
                     alt={`Logo ${index + 1}`}
